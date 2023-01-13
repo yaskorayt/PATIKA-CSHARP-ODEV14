@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+class Solution {
+ 
+    static void Main(String[] args) {
+        string S = Console.ReadLine();
+       //Enter your code below: 
+ 
+        try { //Try to parse string S as integer.
+            int x = int.Parse(S);
+            Console.WriteLine(x); //If it works, writeline.
+        } catch (Exception) { //If it doesn't work, "catch" the exception and print the following string instead.
+            Console.WriteLine("Bad String");
+        }
+    }
+}
